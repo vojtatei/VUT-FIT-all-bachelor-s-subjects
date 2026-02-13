@@ -6,27 +6,43 @@ Repo slouží jako osobní archiv projektů, poznámek a ukázek řešení z jed
 
 ---
 
-## 📚 Struktura repozitáře
+---
 
-Projekty jsou rozděleny podle semestrů a předmětů:
+## 📚 Projekty podle semestrů
 
-1. semestr/
-│── IDM/
-│── IEL/
-│── ILG/
-│── IUS/
-│── IZP/
+### 1. semestr
+- **IDM**: domácí úkol, tahák ke zkoušce
+- **IEL**: projekt „výpočty v obvodech“ (LaTeX), výpisky ke zkoušce
+- **ILG**: domácí úkol, důkaz rovnosti determinantu, numerické výpočty (Gauss-Seidel)
+- **IUS**: projekt č.1 – Kavárenský povaleč (ER diagram, Use case diagram), výpisky
+- **IZP**: projekty
 
-2. semestr/
-│── AIT/
-│── IMA1/
-│── INC/
-│── IOS/
-│── ISU/
-│── IZG/
+### 2. semestr
+- **AIT**:
+- **IMA1**: tahák ke zkoušce
+- **INC**: projekt – přístupový terminál VHDL, výpisy z přednášek
+- **IOS**: projekty (shell, synchronizace), studijní opora
+- **ISU**: zdroje k ISU mám v separátním repozitáři
+- **IZG**: OpenGL pipeline, renderer + Phongův model
 
-3. semestr/
-│── IAL/
+### 3. semestr
+- **IAL**: úkoly (c201, c203, c206…), přehledy algoritmů
+- **IFJ**:
+- **IMA2**: domácí úkoly, tahák
+- **INP**: CPU interpret, Vigenérova šifra, BrainFuck
+- **IPT**: domácí úkoly, shrnutí ke státnicím
+- **ISS**: analýza řeči, poznámky
+
+### 4. semestr
+- **IDS**: SQL projekt, prezentace, studijní opora
+- **IPK**: poznámky + projekt
+- **IPP**: projekt
+- **IZU**: most a pochodně, Prolog, k-means
+- **ICP**: projekt
+
+### 5. semestr
+- *(doplním později)*
+
 
 Každý předmět může obsahovat:
 - 📁 Projekty
