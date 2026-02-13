@@ -1,21 +1,17 @@
-# Elektronika pro informační technologie (IEL)
-**Karta předmětu:** https://www.fit.vut.cz/study/course/210297/.cs
+# Elektronika pro informační technologie
+### Ak. rok 2022/2023. [Karta předmětu](https://www.fit.vut.cz/study/course/230979/.cs?year=2022).
 
-## Projekty
-- **Projekt 1:** *(datum / téma / hodnocení)*  
-  Krátký popis + odkaz na složku: `projekt-01/`
-- **Projekt 2:** *(datum / téma / hodnocení)*  
-  Popis + `projekt-02/`
+## Projekt
+Hodnocení: 10/12
 
-## Poznámky
-- odkazy na prezentace, taháky, vlastní shrnutí
-- tipy k testům / zkoušce
+Čtvrtý příklad jsem nedělal.
 
-## Jak spustit / build
-> Doplň podle potřeby (Makefile, CMake, Python venv, …)
+## Hodnocení cvičení/zkoušky
 
-```bash
-# příklad
-make
-./program
-```
+Cvičení: 17/18
+
+Závěrečná zkouška: 27/55
+
+## Celkový počet bodů
+
+63/100 (D)
