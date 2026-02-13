@@ -1,0 +1,38 @@
+# build artifacts
+/build/
+/bin/
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.so
+*.dll
+*.dSYM/
+
+# CMake / Make
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+.DS_Store
