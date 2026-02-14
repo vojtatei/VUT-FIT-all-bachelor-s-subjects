@@ -1,21 +1,21 @@
-# Základy programování (IZP)
-**Karta předmětu:** https://www.fit.vut.cz/study/course/210366/.cs
+# Základy programování
+### Ak. rok 2022/2023. [Karta předmětu](https://www.fit.vut.cz/study/course/231045/.cs?year=2022).
 
-## Projekty
-- **Projekt 1:** *(datum / téma / hodnocení)*  
-  Krátký popis + odkaz na složku: `projekt-01/`
-- **Projekt 2:** *(datum / téma / hodnocení)*  
-  Popis + `projekt-02/`
+## Projekt 1
+Hodnocení: 7.4/10
+> Snad všichni známe telefonní seznam v chytrých telefonech. Vyhledávání tam většinou funguje i za pomocí numerické klávesnice. Uživatel zadává posloupnosti číslic, ale každým stiskem klávesy myslí jeden ze znaků, které daná čislice reprezentuje (například číslo 5 reprezentuje samotnou 5 či jedno z písmen j, k nebo l). Telefon pak filtruje telefonní seznam podle dané posloupnosti, přičemž se snaží v seznamu najít libovolný kontakt, jehož jméno nebo telefonní číslo obsahuje sekvenci (nepřerušenou nebo rozdělenou) zadaných znaků.
 
-## Poznámky
-- odkazy na prezentace, taháky, vlastní shrnutí
-- tipy k testům / zkoušce
+## Projekt 2 - Práce s datovými strukturami
 
-## Jak spustit / build
-> Doplň podle potřeby (Makefile, CMake, Python venv, …)
+Hodnocení: 10.4/14
 
-```bash
-# příklad
-make
-./program
-```
+
+## Hodnocení cvičení/zkoušky
+
+Cvičení: 6/10
+
+Závěrečná zkouška: 42/54
+
+## Celkový počet bodů
+
+78/100 (C)

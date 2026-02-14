@@ -1,21 +1,17 @@
-# Úvod do softwarového inženýrství (IUS)
-**Karta předmětu:** https://www.fit.vut.cz/study/course/210360/.cs
+# Úvod do softwarového inženýrství
+### Ak. rok 2022/2023. [Karta předmětu](https://www.fit.vut.cz/study/course/231037/.cs?year=2022).
 
 ## Projekty
-- **Projekt 1:** *(datum / téma / hodnocení)*  
-  Krátký popis + odkaz na složku: `projekt-01/`
-- **Projekt 2:** *(datum / téma / hodnocení)*  
-  Popis + `projekt-02/`
 
-## Poznámky
-- odkazy na prezentace, taháky, vlastní shrnutí
-- tipy k testům / zkoušce
+1. projekt: 0/12
+Týmomvy projekt: 12/16
 
-## Jak spustit / build
-> Doplň podle potřeby (Makefile, CMake, Python venv, …)
+## Hodnocení cvičení/zkoušky
 
-```bash
-# příklad
-make
-./program
-```
+Cvičení: 12/12
+
+Závěrečná zkouška: 30/60
+
+## Celkový počet bodů
+
+54/100 (E)
