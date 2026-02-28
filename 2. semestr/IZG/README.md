@@ -1,21 +1,18 @@
-# Základy počítačové grafiky (IZG)
-**Karta předmětu:** https://www.fit.vut.cz/study/course/210365/.cs
+# Základy počítačové grafiky
+### Ak. rok 2022/2023. [Karta předmětu](https://www.fit.vut.cz/study/course/231044/.cs?year=2022).
 
-## Projekty
-- **Projekt 1:** *(datum / téma / hodnocení)*  
-  Krátký popis + odkaz na složku: `projekt-01/`
-- **Projekt 2:** *(datum / téma / hodnocení)*  
-  Popis + `projekt-02/`
+## Projekt 1
 
-## Poznámky
-- odkazy na prezentace, taháky, vlastní shrnutí
-- tipy k testům / zkoušce
+Hodnocení: 4.19/20 (nedodělaný, pouze jsem udělal část projektu pro lepší známku)
 
-## Jak spustit / build
-> Doplň podle potřeby (Makefile, CMake, Python venv, …)
+## Hodnocení cvičení/pulsemstraního testu/zkoušky
 
-```bash
-# příklad
-make
-./program
-```
+Cvičení: 15/18
+
+Půlsemestrální test: 8/10
+
+Závěrečná zkouška: 33.5/52
+
+## Celkový počet bodů
+
+61/100 (D)
