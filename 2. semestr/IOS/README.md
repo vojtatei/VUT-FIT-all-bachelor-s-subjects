@@ -1,21 +1,22 @@
-# Operační systémy (IOS)
-**Karta předmětu:** https://www.fit.vut.cz/study/course/210327/.cs
+# Operační systémy
+### Ak. rok 2022/2023. [Karta předmětu](https://www.fit.vut.cz/study/course/231005/.cs?year=2022).
 
-## Projekty
-- **Projekt 1:** *(datum / téma / hodnocení)*  
-  Krátký popis + odkaz na složku: `projekt-01/`
-- **Projekt 2:** *(datum / téma / hodnocení)*  
-  Popis + `projekt-02/`
+## Projekt 1
 
-## Poznámky
-- odkazy na prezentace, taháky, vlastní shrnutí
-- tipy k testům / zkoušce
+Hodnocení: 1/15
 
-## Jak spustit / build
-> Doplň podle potřeby (Makefile, CMake, Python venv, …)
+## Projekt 2
 
-```bash
-# příklad
-make
-./program
-```
+Hodnocení: 5/15
+
+Samostatná práce: 4
+
+## Hodnocení půlsemestralního testu/zkoušky
+
+Půlsemestrální test: 5.5/10
+
+Závěrečná zkouška: 44/60
+
+## Celkový počet bodů
+
+60/100 (D)

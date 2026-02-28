@@ -6,9 +6,11 @@ Hodnocení: 10/12
 
 Čtvrtý příklad jsem nedělal.
 
-## Hodnocení cvičení/zkoušky
+## Hodnocení cvičení/půlsemestralního testu/zkoušky
 
 Cvičení: 17/18
+
+Půlsemestrální test: 9/15
 
 Závěrečná zkouška: 27/55
 

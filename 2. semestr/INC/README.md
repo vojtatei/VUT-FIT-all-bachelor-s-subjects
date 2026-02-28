@@ -1,21 +1,17 @@
-# Návrh číslicových systémů (INC)
-**Karta předmětu:** https://www.fit.vut.cz/study/course/210322/.cs
+# Návrh číslicových systémů
+### Ak. rok 2022/2023. [Karta předmětu](https://www.fit.vut.cz/study/course/231001/.cs?year=2022).
 
-## Projekty
-- **Projekt 1:** *(datum / téma / hodnocení)*  
-  Krátký popis + odkaz na složku: `projekt-01/`
-- **Projekt 2:** *(datum / téma / hodnocení)*  
-  Popis + `projekt-02/`
+## Projekt
 
-## Poznámky
-- odkazy na prezentace, taháky, vlastní shrnutí
-- tipy k testům / zkoušce
+Hodnocení: 14/20
 
-## Jak spustit / build
-> Doplň podle potřeby (Makefile, CMake, Python venv, …)
+## Hodnocení půlsemestralního testu/zkoušky
 
-```bash
-# příklad
-make
-./program
-```
+Půlsemestrální test: 22/25
+
+Závěrečná zkouška: 42/55
+
+## Celkový počet bodů
+
+78/100 (C)
+

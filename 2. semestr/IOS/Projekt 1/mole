@@ -1,0 +1,17 @@
+--- mole.odevzdany	2023-05-03 12:17:14.475502800 +0200
++++ mole	2023-05-03 12:18:20.176617700 +0200
+@@ -6,12 +6,12 @@
+ export POSIXLY_CORRECT=yes
+ export LC_ALL=C
+ 
+-MOLE_RC="MOLE_RC"
++
+ EDITOR=${EDITOR:-${VISUAL:-vi}}
+ DIRECTORY="."
+ FILE=""
+ 
+-if [ ! -f "$MOLE_RC" ]; then
++if [ ! -e "$MOLE_RC" ]; then
+     mkdir -p "$(dirname "$MOLE_RC")"
+     touch "$MOLE_RC"
+ fi

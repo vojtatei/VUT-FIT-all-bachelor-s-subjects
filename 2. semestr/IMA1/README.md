@@ -1,21 +1,20 @@
-# Matematická analýza 1 (IMA1)
-**Karta předmětu:** https://www.fit.vut.cz/study/course/210315/.cs
+# Matematická analýza 1
+### Ak. rok 2022/2023. [Karta předmětu](https://www.fit.vut.cz/study/course/230994/.cs?year=2022).
 
-## Projekty
-- **Projekt 1:** *(datum / téma / hodnocení)*  
-  Krátký popis + odkaz na složku: `projekt-01/`
-- **Projekt 2:** *(datum / téma / hodnocení)*  
-  Popis + `projekt-02/`
+## Písemné testy
 
-## Poznámky
-- odkazy na prezentace, taháky, vlastní shrnutí
-- tipy k testům / zkoušce
+- 1. test: 4/4 
+- 2. test: 4/4 
+- 3. test: 3/4 
+- 4. test: 4/4 
+- 5. test: 1/4 
 
-## Jak spustit / build
-> Doplň podle potřeby (Makefile, CMake, Python venv, …)
+samostatná práce: 1
 
-```bash
-# příklad
-make
-./program
-```
+## Hodnocení zkoušky
+
+Závěrečná zkouška: 69/80
+
+## Celkový počet bodů
+
+86/100 (B)
