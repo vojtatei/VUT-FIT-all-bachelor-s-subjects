@@ -1,21 +1,24 @@
-# Algoritmy (IAL)
-**Karta předmětu:** https://www.fit.vut.cz/study/course/224885/.cs
+# Algoritmy
+### Ak. rok 2023/2024. [Karta předmětu](https://www.fit.vut.cz/study/course/268213/.cs?year=2023).
 
-## Projekty
-- **Projekt 1:** *(datum / téma / hodnocení)*  
-  Krátký popis + odkaz na složku: `projekt-01/`
-- **Projekt 2:** *(datum / téma / hodnocení)*  
-  Popis + `projekt-02/`
+## Projekt 1
 
-## Poznámky
-- odkazy na prezentace, taháky, vlastní shrnutí
-- tipy k testům / zkoušce
+Hodnocení: 10/10
 
-## Jak spustit / build
-> Doplň podle potřeby (Makefile, CMake, Python venv, …)
+## Projekt 2
 
-```bash
-# příklad
-make
-./program
-```
+Hodnocení: 8.9/10
+
+## Projekt 3 (Společná část z IFJ)
+
+Hodnocení: 8/10
+
+## Hodnocení půlsemestrálního testu/zkoušky
+
+Půlsemestrální test: 2/14
+
+Závěrečná zkouška: 34/51
+
+## Celkový počet bodů
+
+67/100 (D)

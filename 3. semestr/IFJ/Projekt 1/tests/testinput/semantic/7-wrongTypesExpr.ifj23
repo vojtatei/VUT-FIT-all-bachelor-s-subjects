@@ -1,0 +1,4 @@
+func main() {
+    let result = "number: " + 5
+    write(result)
+}

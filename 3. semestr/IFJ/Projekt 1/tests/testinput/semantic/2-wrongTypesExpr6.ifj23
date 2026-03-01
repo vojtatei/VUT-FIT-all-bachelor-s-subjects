@@ -1,0 +1,4 @@
+func main() {
+    let result = 5 + 3.14 * "hello"
+    write(result)
+}

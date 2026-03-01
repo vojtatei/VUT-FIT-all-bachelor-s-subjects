@@ -1,0 +1,7 @@
+func printMessage() {
+    return "Message"
+}
+
+func main() {
+    printMessage()
+}

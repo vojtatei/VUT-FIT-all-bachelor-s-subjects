@@ -1,0 +1,11 @@
+
+func main() -> Int {
+    var x = 5
+    write(x)
+    if x == 5 {
+        return x
+    }
+    else {
+        var y = 32
+    }
+}

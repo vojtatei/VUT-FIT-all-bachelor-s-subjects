@@ -1,0 +1,4 @@
+func main() {
+    let constantVar = 10
+    constantVar = 20
+}

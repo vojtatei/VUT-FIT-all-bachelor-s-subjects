@@ -1,0 +1,8 @@
+
+var x = 32
+
+write(x)
+
+func main() 
+    write("Hello, world!")
+}

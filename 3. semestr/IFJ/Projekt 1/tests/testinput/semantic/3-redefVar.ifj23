@@ -1,0 +1,7 @@
+let globalVar = 12
+
+func main() {
+    let globalVar = 21
+    write(globalVar)
+    let globalVar = 42
+}

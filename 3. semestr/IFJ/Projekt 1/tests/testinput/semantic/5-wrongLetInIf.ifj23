@@ -1,0 +1,9 @@
+let result : Int
+
+
+if let result {
+    var y = 2
+}
+else {
+    var x = 1
+}

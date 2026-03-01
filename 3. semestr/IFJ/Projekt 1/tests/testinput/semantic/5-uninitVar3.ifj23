@@ -1,0 +1,5 @@
+func main() {
+    let x: Int
+    write(x)
+    x = 10
+}

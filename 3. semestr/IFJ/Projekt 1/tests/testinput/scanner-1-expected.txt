@@ -1,0 +1,95 @@
+TOK_EOL 
+TOK_EOL 
+TOK_keyword 
+TOK_identifier Ident: str1
+TOK_equal 
+TOK_string String: Toto je nejaky text v programu jazyka IFJ23
+TOK_EOL 
+TOK_keyword 
+TOK_identifier Ident: str2
+TOK_equal 
+TOK_identifier Ident: str1
+TOK_add 
+TOK_string String: , ktery jeste trochu obohatime
+TOK_EOL 
+TOK_identifier Ident: write
+TOK_openRoundBracket 
+TOK_identifier Ident: str1
+TOK_comma 
+TOK_string String: 
+
+TOK_comma 
+TOK_identifier Ident: str2
+TOK_comma 
+TOK_string String: 
+
+TOK_closeRoundBracket 
+TOK_EOL 
+TOK_keyword 
+TOK_identifier Ident: i
+TOK_equal 
+TOK_identifier Ident: length
+TOK_openRoundBracket 
+TOK_identifier Ident: str1
+TOK_closeRoundBracket 
+TOK_EOL 
+TOK_identifier Ident: write
+TOK_openRoundBracket 
+TOK_string String: Pozice retezce "text" v str2: 
+TOK_comma 
+TOK_identifier Ident: i
+TOK_comma 
+TOK_string String: 
+
+TOK_closeRoundBracket 
+TOK_EOL 
+TOK_identifier Ident: write
+TOK_openRoundBracket 
+TOK_string String: Zadejte serazenou posloupnost vsech malych pismen a-h, 
+TOK_closeRoundBracket 
+TOK_EOL 
+TOK_keyword 
+TOK_identifier Ident: newInput
+TOK_equal 
+TOK_identifier Ident: readString
+TOK_openRoundBracket 
+TOK_closeRoundBracket 
+TOK_EOL 
+TOK_keyword 
+TOK_keyword 
+TOK_identifier Ident: newInput
+TOK_openCurlyBracket 
+TOK_EOL 
+TOK_identifier Ident: str1
+TOK_equal 
+TOK_identifier Ident: newInput
+TOK_EOL 
+TOK_keyword 
+TOK_openRoundBracket 
+TOK_identifier Ident: str1
+TOK_notEq 
+TOK_string String: abcdefgh
+TOK_closeRoundBracket 
+TOK_openCurlyBracket 
+TOK_EOL 
+TOK_identifier Ident: write
+TOK_openRoundBracket 
+TOK_string String: Spatne zadana posloupnost, zkuste znovu:
+
+TOK_closeRoundBracket 
+TOK_EOL 
+TOK_identifier Ident: str1
+TOK_equal 
+TOK_identifier Ident: readString
+TOK_openRoundBracket 
+TOK_closeRoundBracket 
+TOK_doubleQuest 
+TOK_string String: (null)
+TOK_closeCurlyBracket 
+TOK_EOL 
+TOK_closeCurlyBracket 
+TOK_keyword 
+TOK_openCurlyBracket 
+TOK_closeCurlyBracket 
+TOK_EOL 
+TOK_EOF 

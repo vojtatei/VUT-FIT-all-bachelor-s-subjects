@@ -1,0 +1,6 @@
+func main() {
+    let a = "Hello"
+    let b = 5
+    let result = a ** b
+    write(result)
+}

@@ -1,0 +1,4 @@
+v 4
+file "/mnt/c/Users/vojta/Documents/2BIT-zimak/INP/inp23-projekt1/zadani/test/" "../src/cpu.vhd" "828a1c1addbf73426dbc1841bbe935ae2e7161bb" "20231016095439.472":
+  entity cpu at 6( 214) + 0 on 11;
+  architecture behavioral of cpu at 47( 2232) + 0 on 12;

@@ -1,0 +1,7 @@
+func main() {
+    if "hello" == 5 {
+        write("Equal")
+    } else {
+        write("Not equal")
+    }
+}

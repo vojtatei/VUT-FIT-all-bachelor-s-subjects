@@ -1,0 +1,9 @@
+func main() {
+    let a = "test"
+    let b = 10
+    if a < b {
+        write("Less")
+    } else {
+        write("Not less")
+    }
+}

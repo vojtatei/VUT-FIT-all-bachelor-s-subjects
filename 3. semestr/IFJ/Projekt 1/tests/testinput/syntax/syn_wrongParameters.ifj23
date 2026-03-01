@@ -1,0 +1,8 @@
+func add(a: Int, b: Int) -> Int {
+    return a + b
+}
+
+func main() {
+    let result = add(a: 5)
+    print(result)
+}

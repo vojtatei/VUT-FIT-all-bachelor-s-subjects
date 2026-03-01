@@ -1,0 +1,3 @@
+func func main() {
+    print("Duplicate keyword")
+}

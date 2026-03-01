@@ -1,0 +1,79 @@
+TOK_EOL 
+TOK_keyword 
+TOK_keyword 
+TOK_identifier Ident: sranda
+TOK_equal 
+LEX ERROR
+TOK_keyword 
+TOK_identifier Ident: fa
+LEX ERROR
+TOK_identifier Ident: ctorial
+TOK_openRoundBracket 
+TOK_underScore 
+TOK_identifier Ident: n
+TOK_colon 
+TOK_keyword 
+TOK_closeRoundBracket 
+TOK_arrow 
+TOK_keyword 
+TOK_openCurlyBracket 
+TOK_EOL 
+TOK_keyword 
+TOK_identifier Ident: result
+TOK_colon 
+TOK_keyword 
+TOK_EOL 
+TOK_keyword 
+TOK_openRoundBracket 
+TOK_identifier Ident: n
+TOK_less 
+TOK_int 
+TOK_closeRoundBracket 
+TOK_openCurlyBracket 
+TOK_EOL 
+TOK_identifier Ident: result
+TOK_equal 
+TOK_int 
+TOK_EOL 
+TOK_closeCurlyBracket 
+TOK_keyword 
+TOK_openCurlyBracket 
+TOK_EOL 
+TOK_keyword 
+TOK_identifier Ident: decremented
+LEX ERROR
+TOK_identifier Ident: _n
+TOK_equal 
+TOK_identifier Ident: decrement
+TOK_openRoundBracket 
+TOK_identifier Ident: of
+TOK_colon 
+TOK_identifier Ident: n
+TOK_comma 
+TOK_identifier Ident: by
+TOK_colon 
+TOK_int 
+TOK_closeRoundBracket 
+TOK_EOL 
+TOK_keyword 
+TOK_identifier Ident: temp_result
+TOK_equal 
+TOK_identifier Ident: factorial
+TOK_openRoundBracket 
+TOK_identifier Ident: decremented_n
+TOK_closeRoundBracket 
+TOK_EOL 
+TOK_identifier Ident: result
+TOK_equal 
+TOK_identifier Ident: n
+TOK_mul 
+TOK_identifier Ident: temp_result
+TOK_EOL 
+TOK_closeCurlyBracket 
+TOK_EOL 
+TOK_keyword 
+TOK_identifier Ident: result
+TOK_exclam 
+TOK_EOL 
+TOK_closeCurlyBracket 
+TOK_EOF 

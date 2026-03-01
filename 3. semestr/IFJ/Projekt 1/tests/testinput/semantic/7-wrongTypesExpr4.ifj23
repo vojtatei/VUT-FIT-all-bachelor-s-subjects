@@ -1,0 +1,8 @@
+func addStrings(a to: String, b be: String) -> String {
+    return to + be + 42
+}
+
+func main() {
+    let result = addStrings(a: "Hello, ", b: "5")
+    write(result)
+}

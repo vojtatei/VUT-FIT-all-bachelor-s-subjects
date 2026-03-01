@@ -1,0 +1,8 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1697450079" />
+    <testcase name="test_reset" classname="cpu" file="/mnt/c/Users/vojta/Documents/2BIT-zimak/INP/inp23-projekt1/zadani/test/scripts/cpu_lib.py" lineno="10" time="0.0014824867248535156" sim_time_ns="51.000001" ratio_time="34401.65779901962">
+      <failure />
+    </testcase>
+  </testsuite>
+</testsuites>

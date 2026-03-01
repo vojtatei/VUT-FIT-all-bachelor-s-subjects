@@ -1,0 +1,6 @@
+func multiply(a ab: Int, b bc: Int) -> Int {
+    return ab * bc
+}
+
+let result = multiply(a: "5", b: 10)
+write(result)

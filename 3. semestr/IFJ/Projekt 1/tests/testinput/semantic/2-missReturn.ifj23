@@ -1,0 +1,9 @@
+func sum(a ab: Int, b bc: Int) -> Int {
+    let result = ab + bc
+    // chybějící return
+}
+
+func main() {
+    let total = sum(a: 5, b: 10)
+    write(total)
+}

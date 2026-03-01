@@ -1,0 +1,8 @@
+func printMessage() {
+    write("Message")
+}
+
+func main() {
+    let result = printMessage()
+    write(result)
+}

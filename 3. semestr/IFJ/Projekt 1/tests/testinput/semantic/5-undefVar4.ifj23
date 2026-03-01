@@ -1,0 +1,8 @@
+func setVar() {
+    let functionVar = 10
+}
+
+func main() {
+    setVar()
+    write(functionVar)
+}

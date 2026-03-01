@@ -1,0 +1,8 @@
+func getNumber() -> Int {
+    return "not a numberrr"
+}
+
+
+let number = getNumber()
+write(number)
+

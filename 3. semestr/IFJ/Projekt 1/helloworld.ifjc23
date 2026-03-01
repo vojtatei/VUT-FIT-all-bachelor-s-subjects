@@ -1,0 +1,198 @@
+.IFJcode23
+JUMP $$main
+
+# ReadInt -> Int?
+LABEL $ReadInt
+CREATEFRAME
+DEFVAR TF@integer
+READ TF@integer int
+PUSHS TF@integer
+RETURN
+
+# ReadDouble -> Double?
+LABEL $ReadDouble
+CREATEFRAME
+DEFVAR TF@double
+READ TF@double float
+PUSHS TF@double
+RETURN
+
+# ReadString -> String?
+LABEL $ReadString
+CREATEFRAME
+DEFVAR TF@string
+READ TF@string string
+PUSHS TF@string
+RETURN
+
+### CHECKDATATYPE
+LABEL $$checkDataType
+CREATEFRAME
+POPS TF@firstValue
+POPS TF@secondValue
+TYPE TF@firstValue TF@firstValue
+TYPE TF@secondValue TF@secondValue
+
+JUMPIFNEQ $$dataTypeNotEqual TF@firstValue TF@secondValue
+RETURN
+
+LABEL $$dataTypeNotEqual
+WRITE string@Datove\032Typy\032Nejsou\032STEJNE!!!
+EXIT int@10
+
+
+# BUILT-Int2Double(int term) -> Double
+LABEL $$int2Double
+INT2FLOATS
+RETURN
+
+# BUILT-Double2Int(int term) -> Int
+LABEL $$double2Int
+FLOAT2INTS
+RETURN
+
+# BUILT - LENGTH(string str) -> Int
+LABEL $$length
+CREATEFRAME
+DEFVAR TF@lengthNum
+DEFVAR TF@inputString
+POPS TF@inputString
+STRLEN TF@lengthNum TF@inputString
+PUSHS TF@lengthNum
+RETURN
+
+# BUILT - SUBSTRING(string input, int start, int end) -> String?
+LABEL $$subString
+CREATEFRAME
+DEFVAR TF@inputString
+DEFVAR TF@startIndex
+DEFVAR TF@endIndex
+POPS TF@inputString
+POPS TF@startIndex
+POPS TF@endIndex
+
+DEFVAR TF@resultString
+
+MOVE TF@resultString string@
+DEFVAR TF@actualChar
+DEFVAR TF@isStartGtEnd
+
+JUMP $$subStringCheckCond
+
+LABEL $$subStringLoop
+JUMPIFEQ $$subStringEnd TF@startIndex TF@endIndex
+GETCHAR TF@actualChar TF@inputString TF@startIndex # char c = input[start]
+# not sure, protoze resultString ma v prvnim cyklu nedefinovany typ
+CONCAT TF@resultString TF@resultString TF@actualChar
+ADD TF@startIndex TF@startIndex int@1 
+JUMP $$subStringLoop
+
+LABEL $$subStringCheckCond
+DEFVAR TF@strLen
+DEFVAR TF@compResult
+STRLEN TF@strLen TF@inputString
+LT TF@compResult TF@startIndex int@0
+JUMPIFEQ $$subStringNil TF@compResult bool@true
+LT TF@compResult TF@endIndex int@0
+JUMPIFEQ $$subStringNil TF@compResult bool@true
+GT TF@compResult TF@startIndex TF@endIndex
+JUMPIFEQ $$subStringNil TF@compResult bool@true
+JUMPIFEQ $$subStringNil TF@startIndex TF@strLen
+GT TF@compResult TF@startIndex TF@strLen
+JUMPIFEQ $$subStringNil TF@compResult bool@true
+GT TF@compResult TF@endIndex TF@strLen
+JUMPIFEQ $$subStringNil TF@compResult bool@true
+JUMP $$subStringLoop
+
+LABEL $$subStringEnd
+PUSHS TF@resultString
+RETURN
+
+LABEL $$subStringNil
+MOVE TF@resultString nil@nil
+PUSHS TF@resultString
+RETURN
+
+# BUILT ORD (string c) -> Int
+LABEL $$ord
+CREATEFRAME
+DEFVAR TF@strLen
+DEFVAR TF@inputString
+DEFVAR TF@asciiValue
+POPS TF@inputString
+STRLEN TF@strLen TF@inputString
+JUMPIFEQ $$ord0 TF@strLen int@0
+STRI2INT TF@asciiValue TF@inputString int@0
+PUSHS TF@asciiValue
+RETURN
+
+LABEL $$ord0
+PUSHS int@0
+RETURN
+
+# BUILT CHR (int number) -> String
+LABEL $$chr
+CREATEFRAME
+DEFVAR TF@inputNum
+DEFVAR TF@outputChar
+POPS TF@inputNum
+INT2CHAR TF@outputChar TF@inputNum
+PUSHS TF@outputChar
+
+RETURN
+
+# CHECKNIL(bool canBeNill, int/double/string value)
+LABEL $$checkNil
+CREATEFRAME
+DEFVAR TF@canBeNill
+POPS TF@canBeNill
+
+# pokud nemuze byt nil, jdu zkontrolovat hodnotu promenne
+JUMPIFEQ $$checkInputValue TF@canBeNill bool@false
+RETURN
+# Zkontroluj hodnotu vstupu
+LABEL $$checkInputValue
+DEFVAR TF@inputValue
+POPS TF@inputValue
+JUMPIFEQ $$cantBeNillError TF@inputValue nil@nil
+RETURN
+# CHYBA, ukonci program
+LABEL $$cantBeNillError
+WRITE string@DAL\032SI\032NILL\032ZLOBIDLO!!!
+EXIT int@7
+
+
+# BUILTWRITE (int count, ...]
+LABEL $$write
+CREATEFRAME
+DEFVAR TF@actualValue
+DEFVAR TF@counter
+POPS TF@counter
+
+JUMPIFEQ $$writeEnd TF@counter int@0
+
+LABEL $$writeCycle
+POPS TF@actualValue
+WRITE TF@actualValue
+SUB TF@counter TF@counter int@1
+JUMPIFNEQ $$writeCycle TF@counter int@0
+RETURN
+
+
+#### NESMI BYT NIL - INT
+#### MAIN
+LABEL $$main
+DEFVAR GF@x
+MOVE GF@x float@0x1.8p+0
+
+
+PUSHS int@42
+PUSHS int@40
+EQS
+LTS
+POPS GF@x
+WRITE GF@x
+
+
+
+

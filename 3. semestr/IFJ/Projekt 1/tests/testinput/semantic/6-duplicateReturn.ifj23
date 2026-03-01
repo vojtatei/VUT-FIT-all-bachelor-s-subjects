@@ -1,0 +1,14 @@
+func check(b a: Int) -> Int {
+    if a > 0 {
+        return
+    }
+    else {
+        var x = 42
+    }
+    return 42
+}
+
+func main() {
+    let isPositive = check(b: 5)
+    write(isPositive)
+}

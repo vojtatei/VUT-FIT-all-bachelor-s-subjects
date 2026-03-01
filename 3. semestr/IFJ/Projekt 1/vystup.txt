@@ -1,0 +1,18 @@
+premenna __: 1
+premenna A4: 4
+premenna a____: 255
+premenna a4: 0x1.4666666666666p+1
+premenna a5: 0x1.f4p+9
+premenna a5: 0x1.999999999999ap-4
+premenna _a4: toto je _a4
+premenna __a6: 
+premenna A7_: Ahoj
+"Sve'te \"
+premenna a8: a"b
+dama    e\f
+premenna ABCDEFGHijklmnopqrstuvXYZ: Ahoj tohle je multi
+radkovy string,
+ktery bych mel podporovat
+premenna bA4: nil
+premenna bA4: 0x1.6b9999999999ap+6
+premenna BA4: nil

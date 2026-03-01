@@ -1,0 +1,61 @@
+TOK_keyword 
+TOK_identifier Ident: scitaj
+TOK_openRoundBracket 
+TOK_underScore 
+TOK_identifier Ident: cislo1
+TOK_colon 
+TOK_keyword 
+TOK_comma 
+TOK_underScore 
+TOK_identifier Ident: cislo2
+TOK_colon 
+TOK_keyword 
+TOK_closeRoundBracket 
+TOK_arrow 
+TOK_keyword 
+TOK_openCurlyBracket 
+TOK_EOL 
+TOK_identifier Ident: write
+TOK_openRoundBracket 
+TOK_string String: vykonava sa funkcia scitaj(
+TOK_comma 
+TOK_identifier Ident: cislo1
+TOK_comma 
+TOK_string String: ,
+TOK_comma 
+TOK_identifier Ident: cislo2
+TOK_comma 
+TOK_string String: )
+
+TOK_closeRoundBracket 
+TOK_EOL 
+TOK_keyword 
+TOK_identifier Ident: sucet
+TOK_colon 
+TOK_keyword 
+TOK_EOL 
+TOK_identifier Ident: sucet
+TOK_equal 
+TOK_identifier Ident: cislo1
+TOK_add 
+TOK_identifier Ident: cislo2
+TOK_EOL 
+TOK_keyword 
+TOK_identifier Ident: sucet
+TOK_EOL 
+TOK_closeCurlyBracket 
+TOK_EOL 
+TOK_EOL 
+TOK_keyword 
+TOK_identifier Ident: vysledok
+TOK_equal 
+TOK_identifier Ident: scitaj
+TOK_openRoundBracket 
+TOK_int 
+TOK_comma 
+TOK_int 
+TOK_closeRoundBracket 
+TOK_EOL 
+TOK_identifier Ident: write
+TOK_openRoundBracket 
+LEX ERROR

@@ -1,0 +1,9 @@
+func main() {
+    if 5 > 2 {
+        let innerVar = 5
+    }
+    else {
+        var x = 42
+    }
+    write(innerVar)
+}

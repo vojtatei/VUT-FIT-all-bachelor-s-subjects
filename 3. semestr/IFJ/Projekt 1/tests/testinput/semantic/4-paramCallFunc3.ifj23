@@ -1,0 +1,8 @@
+func square(a b: Int) -> Int {
+    return b * b
+}
+
+
+let result = square(a: 5, b: 10)
+write(result)
+

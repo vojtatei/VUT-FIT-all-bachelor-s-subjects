@@ -1,0 +1,8 @@
+func add(a: Int, b: Int) -> Int {
+    // Chybějící return
+}
+
+func main() {
+    let result = add(a: 5, b: 10)
+    print(result)
+}

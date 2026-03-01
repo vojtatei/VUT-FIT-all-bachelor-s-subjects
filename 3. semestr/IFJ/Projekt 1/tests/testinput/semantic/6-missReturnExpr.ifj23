@@ -1,0 +1,8 @@
+func getValue() -> Int {
+    return
+}
+
+func main() {
+    let value = getValue()
+    write(value)
+}

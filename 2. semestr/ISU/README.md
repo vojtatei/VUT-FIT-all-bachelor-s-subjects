@@ -1,21 +1,19 @@
-# Systémy a služby (ISU)
-**Karta předmětu:** https://www.fit.vut.cz/study/course/210277/.cs
+# Programování na strojové úrovni 
+### Ak. rok 2022/2023. [Karta předmětu](https://www.fit.vut.cz/study/course/230959/.cs?year=2022).
 
-## Projekty
-- **Projekt 1:** *(datum / téma / hodnocení)*  
-  Krátký popis + odkaz na složku: `projekt-01/`
-- **Projekt 2:** *(datum / téma / hodnocení)*  
-  Popis + `projekt-02/`
+## Testy
 
-## Poznámky
-- odkazy na prezentace, taháky, vlastní shrnutí
-- tipy k testům / zkoušce
+- 1. test: 6/6
+- 2. test: 5/9
+- 3. test: 3/9 
 
-## Jak spustit / build
-> Doplň podle potřeby (Makefile, CMake, Python venv, …)
 
-```bash
-# příklad
-make
-./program
-```
+## Hodnocení půsemestrální zkoušky/zkoušky
+
+Půlsemestrální zkouška: 14/16
+
+Závěrečná zkouška: 41/60
+
+## Celkový počet bodů
+
+69/100 (D)

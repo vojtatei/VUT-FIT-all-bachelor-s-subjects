@@ -1,0 +1,7 @@
+func getNumber() -> Int {
+    // žádný return
+}
+
+    let value = getNumber()
+    write(value)
+

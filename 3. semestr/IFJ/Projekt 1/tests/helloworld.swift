@@ -1,0 +1,6 @@
+// SWIFT SOUBOR PRO VYZKOUSENI RUZNYCH SYNTAXI ATD, CAN EDIT
+var x : Int?
+if x == 50 {
+print("AHOJ")
+
+}

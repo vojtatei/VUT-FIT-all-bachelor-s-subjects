@@ -1,0 +1,442 @@
+.IFJcode23
+# MAIN PROGRAM
+ 
+LABEL $MAIN
+#  GLOBAL VARIABLES 
+DEFVAR GF@$statValue
+DEFVAR GF@$operand1
+DEFVAR GF@$operand2
+DEFVAR GF@$tmpValue
+# # MAIN PROGRAM
+
+ 
+CREATEFRAME
+PUSHFRAME
+JUMP $endscitaj
+LABEL scitaj
+CREATEFRAME
+PUSHFRAME
+DEFVAR LF@$funcReturn0
+DEFVAR LF@$$funcReturn0
+MOVE LF@$$funcReturn0 bool@false
+DEFVAR LF@cislo10
+POPS LF@cislo10
+DEFVAR LF@$$cislo10
+MOVE LF@$$cislo10 bool@false
+DEFVAR LF@cislo20
+POPS LF@cislo20
+DEFVAR LF@$$cislo20
+MOVE LF@$$cislo20 bool@false
+# Parameters pushed 
+PUSHS string@)\010
+PUSHS LF@cislo20
+PUSHS string@,
+PUSHS LF@cislo10
+PUSHS string@vykonava\032sa\032funkcia\032scitaj(
+PUSHS int@5
+CALL write
+DEFVAR LF@sucet0
+DEFVAR LF@$$sucet0
+MOVE LF@$$sucet0 bool@false
+PUSHS LF@cislo10
+PUSHS LF@cislo20
+ADDS
+POPS LF@sucet0
+PUSHS LF@sucet0
+POPS LF@$funcReturn0
+PUSHS LF@$funcReturn0
+PUSHS LF@$$funcReturn0
+CALL $$checkNil
+PUSHS LF@$funcReturn0
+POPFRAME
+RETURN
+POPFRAME
+RETURN
+LABEL $endscitaj
+DEFVAR GF@vysledok1
+DEFVAR GF@$$vysledok1
+MOVE GF@$$vysledok1 bool@false
+PUSHS int@3
+PUSHS int@5
+CALL scitaj
+POPS GF@vysledok1
+PUSHS GF@vysledok1
+PUSHS GF@$$vysledok1
+CALL $$checkNil
+
+PUSHS string@\010
+PUSHS GF@vysledok1
+PUSHS string@Vysledok\032scitania:\032
+PUSHS int@3
+CALL write
+DEFVAR GF@VYSLEDOK2
+DEFVAR GF@$$VYSLEDOK2
+MOVE GF@$$VYSLEDOK2 bool@false
+PUSHS int@5
+PUSHS int@3
+CALL scitaj
+POPS GF@VYSLEDOK2
+PUSHS GF@VYSLEDOK2
+PUSHS GF@$$VYSLEDOK2
+CALL $$checkNil
+
+PUSHS string@\010
+PUSHS GF@VYSLEDOK2
+PUSHS string@Vysledok\032scitania:\032
+PUSHS int@3
+CALL write
+PUSHS GF@vysledok1
+PUSHS GF@VYSLEDOK2
+POPS GF@$operand2
+POPS GF@$operand1
+EQ GF@$statValue GF@$operand1 GF@$operand2
+NOT GF@$statValue GF@$statValue
+PUSHS GF@$statValue
+POPS GF@$statValue
+JUMPIFEQ $$else1 GF@$statValue bool@false
+LABEL $$if1
+PUSHS string@vysledok\032==\032VYSLEDOK\032a\032sme\032vo\032vetve\032if\010
+PUSHS int@1
+CALL write
+DEFVAR LF@prvyRetazec3
+DEFVAR LF@$$prvyRetazec3
+MOVE LF@$$prvyRetazec3 bool@false
+PUSHS string@Ahoj,\032
+POPS LF@prvyRetazec3
+PUSHS string@prvyRetazec:\032Ahoj,\032\010
+PUSHS int@1
+CALL write
+DEFVAR LF@druhyRetazec4
+DEFVAR LF@$$druhyRetazec4
+MOVE LF@$$druhyRetazec4 bool@false
+PUSHS string@svet!
+POPS LF@druhyRetazec4
+PUSHS string@druhyRetazec:\032svet!\032\010
+PUSHS int@1
+CALL write
+DEFVAR LF@spojenyVysledok5
+DEFVAR LF@$$spojenyVysledok5
+MOVE LF@$$spojenyVysledok5 bool@false
+PUSHS LF@druhyRetazec4
+PUSHS LF@prvyRetazec3
+CALL spoj
+POPS LF@spojenyVysledok5
+PUSHS LF@spojenyVysledok5
+PUSHS LF@$$spojenyVysledok5
+CALL $$checkNil
+
+PUSHS string@\010
+PUSHS LF@spojenyVysledok5
+PUSHS string@funkcia\032spoj\032vracia\032vysledok\032spojenyVysledok:\032
+PUSHS int@3
+CALL write
+JUMP $$endElse1
+LABEL $$else1
+PUSHS string@vysledok\032!=\032VYSLEDOK\032a\032sme\032vo\032vetve\032else\010
+PUSHS int@1
+CALL write
+LABEL $$endElse1
+PUSHS string@\010
+PUSHS int@1
+CALL write
+PUSHS int@5
+PUSHS int@5
+CALL scitaj
+POPS GF@VYSLEDOK2
+PUSHS GF@VYSLEDOK2
+PUSHS GF@$$VYSLEDOK2
+CALL $$checkNil
+
+PUSHS string@\010
+PUSHS GF@VYSLEDOK2
+PUSHS string@VYSLEDOK\032scitania:\032
+PUSHS int@3
+CALL write
+PUSHS GF@vysledok1
+PUSHS GF@VYSLEDOK2
+EQS
+POPS GF@$statValue
+JUMPIFEQ $$else2 GF@$statValue bool@false
+LABEL $$if2
+PUSHS string@vysledok\032==\032VYSLEDOK\032a\032sme\032vo\032vetve\032if\010
+PUSHS int@1
+CALL write
+JUMP $$endElse2
+LABEL $$else2
+PUSHS string@vysledok\032!=\032VYSLEDOK\032a\032sme\032vo\032vetve\032else\010
+PUSHS int@1
+CALL write
+LABEL $$endElse2
+JUMP $endspoj
+LABEL spoj
+CREATEFRAME
+PUSHFRAME
+DEFVAR LF@$funcReturn0
+DEFVAR LF@$$funcReturn0
+MOVE LF@$$funcReturn0 bool@false
+DEFVAR LF@retazec10
+POPS LF@retazec10
+DEFVAR LF@$$retazec10
+MOVE LF@$$retazec10 bool@false
+DEFVAR LF@retazec20
+POPS LF@retazec20
+DEFVAR LF@$$retazec20
+MOVE LF@$$retazec20 bool@false
+# Parameters pushed 
+PUSHS string@)\010
+PUSHS LF@retazec20
+PUSHS string@,
+PUSHS LF@retazec10
+PUSHS string@vykonava\032sa\032funkcia\032spoj(
+PUSHS int@5
+CALL write
+DEFVAR LF@spojenyRetazec6
+DEFVAR LF@$$spojenyRetazec6
+MOVE LF@$$spojenyRetazec6 bool@false
+PUSHS LF@retazec10
+PUSHS LF@retazec20
+POPS GF@$operand2
+POPS GF@$operand1
+CONCAT GF@$operand1 GF@$operand1 GF@$operand2
+PUSHS GF@$operand1
+POPS LF@spojenyRetazec6
+PUSHS LF@spojenyRetazec6
+POPS LF@$funcReturn0
+PUSHS LF@$funcReturn0
+PUSHS LF@$$funcReturn0
+CALL $$checkNil
+PUSHS LF@$funcReturn0
+POPFRAME
+RETURN
+POPFRAME
+RETURN
+LABEL $endspoj
+DEFVAR GF@haha7
+DEFVAR GF@$$haha7
+MOVE GF@$$haha7 bool@false
+PUSHS string@\032vianoce
+PUSHS string@su
+CALL spoj
+POPS GF@haha7
+PUSHS GF@haha7
+PUSHS GF@$$haha7
+CALL $$checkNil
+
+PUSHS string@\010
+PUSHS GF@haha7
+PUSHS int@2
+CALL write
+PUSHS string@vysledok
+PUSHS string@neulozi
+CALL spoj
+DEFVAR GF@sucet8
+DEFVAR GF@$$sucet8
+MOVE GF@$$sucet8 bool@false
+PUSHS int@10
+PUSHS int@5
+ADDS
+POPS GF@sucet8
+PUSHS GF@sucet8
+PUSHS int@5
+CALL vyhodnot
+PUSHS GF@sucet8
+PUSHS int@5
+CALL vyhodnot
+POPS GF@sucet8
+PUSHS GF@sucet8
+PUSHS GF@$$sucet8
+CALL $$checkNil
+
+PUSHS string@\010
+PUSHS GF@sucet8
+PUSHS string@sucet\032je:\032
+PUSHS int@3
+CALL write
+JUMP $endvyhodnot
+LABEL vyhodnot
+CREATEFRAME
+PUSHFRAME
+DEFVAR LF@$funcReturn0
+DEFVAR LF@$$funcReturn0
+MOVE LF@$$funcReturn0 bool@false
+DEFVAR LF@cislo10
+POPS LF@cislo10
+DEFVAR LF@$$cislo10
+MOVE LF@$$cislo10 bool@false
+DEFVAR LF@cislo20
+POPS LF@cislo20
+DEFVAR LF@$$cislo20
+MOVE LF@$$cislo20 bool@false
+# Parameters pushed 
+PUSHS string@)\010
+PUSHS LF@cislo20
+PUSHS string@,
+PUSHS LF@cislo10
+PUSHS string@vykonava\032sa\032funkcia\032vyhodnot(with\032
+PUSHS int@5
+CALL write
+PUSHS LF@cislo10
+PUSHS LF@cislo20
+ADDS
+PUSHS int@2
+MULS
+POPS LF@$funcReturn0
+PUSHS LF@$funcReturn0
+PUSHS LF@$$funcReturn0
+CALL $$checkNil
+PUSHS LF@$funcReturn0
+POPFRAME
+RETURN
+POPFRAME
+RETURN
+LABEL $endvyhodnot
+EXIT int@0
+# # BUILTWRITE (int count, ...) 
+LABEL write
+CREATEFRAME
+DEFVAR TF@actualValue
+DEFVAR TF@counter
+POPS TF@counter
+JUMPIFEQ $$writeEnd TF@counter int@0
+LABEL $$writeCycle
+POPS TF@actualValue
+JUMPIFNEQ $$writeNonNill TF@actualValue nil@nil
+MOVE TF@actualValue string@nil
+LABEL $$writeNonNill
+WRITE TF@actualValue
+SUB TF@counter TF@counter int@1
+JUMPIFNEQ $$writeCycle TF@counter int@0
+RETURN
+LABEL readInt
+CREATEFRAME
+DEFVAR TF@integer
+READ TF@integer int
+PUSHS TF@integer
+RETURN
+LABEL readString
+CREATEFRAME
+DEFVAR TF@string
+READ TF@string string
+PUSHS TF@string
+RETURN
+LABEL readDouble
+CREATEFRAME
+DEFVAR TF@double
+READ TF@double float
+PUSHS TF@double
+RETURN
+#  BUILT-Int2Double(int term) -> Double 
+LABEL Int2Double
+INT2FLOATS
+RETURN
+#  BUILT-Double2Int(int term) -> Int 
+LABEL Double2Int
+FLOAT2INTS
+RETURN
+#  BUILT - LENGTH(string str) -> Int 
+LABEL length
+CREATEFRAME
+DEFVAR TF@lengthNum
+DEFVAR TF@inputString
+POPS TF@inputString
+STRLEN TF@lengthNum TF@inputString
+PUSHS TF@lengthNum
+RETURN
+LABEL substring
+CREATEFRAME
+DEFVAR TF@inputString
+DEFVAR TF@startIndex
+DEFVAR TF@endIndex
+POPS TF@inputString
+POPS TF@startIndex
+POPS TF@endIndex
+DEFVAR TF@resultString
+MOVE TF@resultString string@
+DEFVAR TF@actualChar
+DEFVAR TF@isStartGtEnd
+JUMP $$subStringCheckCond
+LABEL $$subStringLoop
+JUMPIFEQ $$subStringEnd TF@startIndex TF@endIndex
+GETCHAR TF@actualChar TF@inputString TF@startIndex # char c = input[start]
+CONCAT TF@resultString TF@resultString TF@actualChar
+ADD TF@startIndex TF@startIndex int@1
+JUMP $$subStringLoop
+LABEL $$subStringCheckCond
+DEFVAR TF@strLen
+DEFVAR TF@compResult
+STRLEN TF@strLen TF@inputString
+LT TF@compResult TF@startIndex int@0
+JUMPIFEQ $$subStringNil TF@compResult bool@true
+LT TF@compResult TF@endIndex int@0
+JUMPIFEQ $$subStringNil TF@compResult bool@true
+GT TF@compResult TF@startIndex TF@endIndex
+JUMPIFEQ $$subStringNil TF@compResult bool@true
+JUMPIFEQ $$subStringNil TF@startIndex TF@strLen
+GT TF@compResult TF@startIndex TF@strLen
+JUMPIFEQ $$subStringNil TF@compResult bool@true
+GT TF@compResult TF@endIndex TF@strLen
+JUMPIFEQ $$subStringNil TF@compResult bool@true
+JUMP $$subStringLoop
+LABEL $$subStringEnd
+PUSHS TF@resultString
+RETURN
+LABEL $$subStringNil
+MOVE TF@resultString nil@nil
+PUSHS TF@resultString
+RETURN
+#  BUILT ORD (string c) -> Int 
+LABEL ord
+CREATEFRAME
+DEFVAR TF@strLen
+DEFVAR TF@inputString
+DEFVAR TF@asciiValue
+POPS TF@inputString
+STRLEN TF@strLen TF@inputString
+JUMPIFEQ $$ord0 TF@strLen int@0
+STRI2INT TF@asciiValue TF@inputString int@0
+PUSHS TF@asciiValue
+RETURN
+LABEL $$ord0
+PUSHS int@0
+RETURN
+#  BUILT CHR (int number) -> String 
+LABEL chr
+CREATEFRAME
+DEFVAR TF@inputNum
+DEFVAR TF@outputChar
+POPS TF@inputNum
+INT2CHAR TF@outputChar TF@inputNum
+PUSHS TF@outputChar
+RETURN
+#  CHECKNIL(bool canBeNill, int/double/string value) 
+LABEL $$checkNil
+CREATEFRAME
+DEFVAR TF@canBeNill
+POPS TF@canBeNill
+#  pokud nemuze byt nil, jdu zkontrolovat hodnotu promenne 
+JUMPIFEQ $$checkInputValue TF@canBeNill bool@false
+RETURN
+# Zkontroluj hodnotu vstupu 
+LABEL $$checkInputValue
+DEFVAR TF@inputValue
+POPS TF@inputValue
+JUMPIFEQ $$cantBeNillError TF@inputValue nil@nil
+RETURN
+# CHYBA, ukonci program 
+LABEL $$cantBeNillError
+WRITE string@DAL\032SI\032NILL\032ZLOBIDLO!!!
+EXIT int@7
+LABEL $doubleQuest
+POPS GF@$operand2
+POPS GF@$operand1
+JUMPIFEQ $isNil GF@$operand1 nil@nil
+# Levy operand neni nil, davam na zasobnik a konec 
+PUSHS GF@$operand1
+RETURN
+LABEL $isNil
+JUMPIFEQ $isNilError GF@$operand2 nil@nil
+PUSHS GF@$operand2
+RETURN
+# Chyba: pravy operand nemuze byt nil 
+LABEL $isNilError
+EXIT int@7
