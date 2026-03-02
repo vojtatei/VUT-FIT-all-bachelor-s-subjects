@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "IPK-proj1": {
+      "commandName": "Project",
+      "commandLineArgs": "-t udp -s anton5.fit.vutbr.cz -p 4567"
+    }
+  }
+}

@@ -1,0 +1,2 @@
+### Známá omezení
+- Při testování jsem zjistil, že trvá asi sekundu, než se můj program inicializuje, což zapřičinilo, že prakticky žádný test neprosešl a proto jsem do testů musel dát na začátek funkci sleep, aby měl program čas se inicializovat.
