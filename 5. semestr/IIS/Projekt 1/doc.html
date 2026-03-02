@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0064)https://www.fit.vut.cz/study/course/IIS/private/projekt/doc.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2">
+
+    <title>Projekt IIS</title>
+    <style type="text/css">
+    	table { border-collapse: collapse; }
+    	td, th { border: 1px solid black; padding: 0.3em 0.5em; text-align: left; }
+    	dt { font-weight: bold; margin-top: 0.5em; }
+    </style>
+<style>
+      @keyframes rotate360 {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+        @font-face {
+            font-family: 'Amazon Ember';
+            src: url("chrome-extension://cgdjpilhipecahhcilnafpblkieebhea/fonts/AmazonEmber_Rg.ttf");
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Amazon Ember';
+            src: url("chrome-extension://cgdjpilhipecahhcilnafpblkieebhea/fonts/AmazonEmber_Bd.ttf");
+            font-weight: bold;
+            font-style: normal;
+        }
+    </style></head>
+<body data-new-gr-c-s-check-loaded="14.1209.0" data-gr-ext-installed="">
+
+<!-- Zkontrolujte prosím nastavení kódování v hlavičce dokumentu
+     podle použitého editoru -->
+
+<h1>Konference</h1> <!-- Nahradte názvem svého zadání -->
+
+<dl>
+	<dt>Autoři</dt>
+	<dd>První jméno <!-- Nahraďte skutečným jménem a e-mailem autora a popisem činnosti -->
+	    <a href="mailto:xjerab28@stud.fit.vutbr.cz">xjerab28@stud.fit.vutbr.cz</a> -
+		Vedení týmu, návrh systému, rozdělení práce a úkolů
+	</dd>
+	<dd>Druhé jméno <!-- Nahraďte skutečným jménem a e-mailem autora a popisem činnosti -->
+	    <a href="mailto:xteich02@stud.fit.vutbr.cz">xteich02@stud.fit.vutbr.cz</a> -
+		Návrh, vývoj
+	</dd>
+  <dd>Třetí jméno <!-- Nahraďte skutečným jménem a e-mailem autora a popisem činnosti -->
+	    <a href="mailto:xsimun05@stud.fit.vutbr.cz">xsimun05@stud.fit.vutbr.cz</a> -
+	  	Návrh, vývoj
+	</dd>
+	<dt>URL aplikace</dt>
+	<dd><a href="http://www.stud.fit.vutbr.cz/~xjerab28">http://www.stud.fit.vutbr.cz/~xjerab28</a></dd>
+</dl>
+
+<h2>Uživatelé systému pro testování</h2>
+<p>Uveďte prosím existující zástupce <strong>všech rolí uživatelů</strong>.</p>
+<table>
+<tbody><tr><th>Login</th><th>Heslo</th><th>Role</th></tr>
+<tr><td>admin@admin.cz</td><td>admin</td><td>Administrátor</td></tr>
+<tr><td>user@user.cz</td><td>user</td><td>Registrovaný uživatel (organizátor konference)</td></tr>
+</tbody></table>
+
+<h3>Video</h3>
+<a href="https://photos.app.goo.gl/d2AzMj458Zz2DYif7">https://photos.app.goo.gl/d2AzMj458Zz2DYif7</a>
+
+<h2>Implementace</h2>
+<p>V systému jsou tyto entity:</p>
+<ul>
+	<li>Attendance - účast na prezentaci (volení osobního rozvrhu)</li>
+	<li>Conference - konference s odpovídajícími údaji</li>
+	<li>Presentation - prezentace na konferenci</li>
+	<li>Question - otázka k prezentaci</li>
+	<li>Reservation - rezervace na konferenci</li>
+	<li>Room - místnost patřící ke konferenci</li>
+	<li>User - registrovaný uživatel</li>
+</ul>
+
+<p>Veškeré případy užití a logika aplikace je definována v třídach XService, kde X je název entity.</p>
+<p>Všechny services poskytují metody pro základní CRUD operace a další potřebné metody, například pro filtrování, vyhledávání, řazení.</p>
+<p>Součástí Create a Update metod jsou i logické, bussiness kontroly, které znemožňují například vytvořit konferenci v minulosti,
+či rezervovat více míst, než je aktuálně k dispozici.</p>
+<p>Tyto kontroly jsou jak na back-endu (v services) tak i na straně front-endu v samotných formulářích, aby uživatel okamžitě věděl,
+že nemůže provést nějakou akci.</p>
+
+
+<h3>UI</h3>
+<p>Každý jednotlivý prvek - listy, tabulky, formuláře, atd. je vytvořen jako samostatná, logická komponenta v umístění
+<i>app/UI/Components</i>. </p>
+
+<p>Díky tomu nám bylo umožněno používat jednotlivé komponenty na více místech, např. zobrazit
+nejpopulárnější prezentace na hlavní stránce, prezentace pro danou konferenci, nebo prezentace vytvořené uživatelem.</p>
+
+<p>Komponenty jsou logicky pojmenované podle názvu entity a post-fixu, nejčastěji <i>Form, Grid, List</i>. To umožňuje
+rychlou a jednoduchou navigaci a rozšiřitelnost.</p>
+
+
+<h3>Databáze</h3>
+
+<img src="doc/schema.png" alt="Schéma databáze" width="800px">
+
+<h2>Požadavky</h2>
+<ul>
+	<li>PHP 8.1</li>
+	<li>MariaDB/MySQL databáze</li>
+	<li>Composer</li>
+</ul>
+
+<h2>Instalace</h2>
+Odevzdaný .zip archiv rozbalte na serveru a postupujte podle následujících kroků:
+
+<ol>
+	<li>V kořenu projektu, kde se nachází <i>composer.json</i> spusťte příkaz <i>composer install</i> k nainstalování potřebných knihoven</li>
+	<li>V <i>config/local.neon</i> nastavte připojení k databázi</li>
+	<li>Správné připojení a inicializaci databáze můžete otestovat příkazem <i>bin/console orm:schema-tool:update --force</i>,
+		ujisťete se, že máte spouštěcí práva.</li>
+	<li>Po úspěšném provedení příkazu se podle aktuálního schématu vytvořila databáze a aplikace je spuštěna.</li>
+</ol>
+<p>Pozn. příkazem <i>bin/console doctrine:fixtures:load</i> je možné nahrát testovací data (fixtures).</p>
+<p>Pozn2. pokud by byl problém s inicializací databáze, je přiložen soubor <i>init.sql</i></p>
+
+<h2>Známé problémy</h2>
+<p>Vše implementováno podle zadání, včetně rozšíření pro otázky k prezentaci - pouze registrovaný uživatel je může přidávat.
+	Odebrat je může pouze řečník prezentace, nebo uživatel co otázku přidal.</p>
+<p>K bodu zadání pro potvrzování rezervace <i>Potvrzení může proběhnout kdykoliv od registrace až po zahájení události.</i>, namítáme,
+že účastník konference může přijít i v průběhu konference, tudíž by pak nebyla možnost mu rezervaci potvrdit.</p>
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

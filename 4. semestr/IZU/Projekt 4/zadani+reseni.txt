@@ -1,0 +1,19 @@
+Zadani c. 421
+
+Metodou K-means clustering zaradte nasledujci body (x,y,z) v 3D prostoru 
+(-5,-7, 1) ( 6, 1,-5) ( 9,-1, 2) (-7, 3,-9) (-6,-2, 3) (-9,-4,-7) ( 0,-1,-4) ( 4, 6,-4) ( 4, 3,-9) (-7, 8, 9) 
+do 3 shluku s pocatecnimi stredy 
+( 4, 6,-4) (-7, 3,-9) ( 0,-1,-4).
+
+Vysledky vypoctu zaokrouhlujte na dve desetinna mista. 
+
+
+
+Cluster 1:
+(6, 1, -5) (9, -1, 2) (0, -1, -4) (4, 6, -4) (4, 3, -9)
+
+Cluster 2:
+(-7, 3, -9) (-9, -4, -7)
+
+Cluster 3:
+(-5, -7, 1) (-6, -2, 3) (-7, 8, 9)

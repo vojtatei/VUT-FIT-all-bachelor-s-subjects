@@ -1,0 +1,122 @@
+.jerabek {
+	color: #7456FF;
+}
+
+label:has(input:required)::after {
+	content: ' *';
+	color: red;
+}
+
+
+nav {
+	font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+	background-color: #34353A; /* Tmavý šedý background */
+
+	font-weight: bolder;
+	padding: 0;
+}
+
+.btn-purple-out {
+	border: 2px solid #7456FF;
+	border-radius: 5px;
+	background-color: transparent;
+	transition: background-color 0.5s;
+}
+
+.btn-purple-out:hover  {
+	border: 2px solid #7456FF;
+	border-radius: 5px;
+	background-color: #7456FF;
+}
+
+.navbar-brand {
+	color: #fff !important; /* Bílá barva textu */
+	font-size: 24px;
+	font-weight: bolder;
+}
+
+.navbar-toggler {
+	border-color: rgba(255, 255, 255, 0.1); /* Změna barvy okraje toggle button na světlejší */
+}
+
+.nav-link {
+	color: #fff; /* Bílá barva odkazů */
+}
+
+.nav-link:hover {
+	color: #7456FF !important; /* Bílá barva odkazů */
+}
+
+/*SLIDER*/
+#presentation-slider {
+	height: 500px; /* Nastavte požadovanou výšku */
+}
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+	margin-top: 0; /* remove the gap so it doesn't close */
+}
+
+.carousel-inner img {
+	height: 100%; /* Nastaví výšku obrázku podle výšky kontejneru */
+	object-fit: cover; /* Ořízne obrázek a vyplní kontejner */
+}
+
+.carousel-item {
+	height: 100%; /* Nastaví výšku položky na výšku rodiče (karuselu) */
+	position: relative; /* Pro overlay */
+}
+
+.carousel-item .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.7); /* Nastaví tmavý překryv s průhledností 50% */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	text-align: center;
+	z-index: 1; /* Umístí overlay nad obrázek */
+}
+
+.overlay h2 {
+	font-size: 64px;
+	margin: 0;
+}
+
+/* //SLIDER */
+
+/* PRESENTATION CARDS */
+.presentation-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6); /* Ztmavení překrytí */
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2em;
+	font-weight: bold;
+	z-index: 1;
+}
+
+.card-image-container {
+	position: relative;
+}
+/* //PRESENTATION CARDS*/
+
+
+
+footer {
+	background-color: #34353A; /* Tmavě šedé pozadí */
+	color: white;
+}

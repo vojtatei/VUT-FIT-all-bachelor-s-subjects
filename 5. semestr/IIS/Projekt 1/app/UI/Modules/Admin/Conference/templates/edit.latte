@@ -1,0 +1,17 @@
+{block content}
+    <h2>Upravit konferenci: {$conference->title}</h2>
+
+    {control conferenceForm}
+{/block}
+
+{block scripts}
+<script>
+    $.nette.ext('redirect', {
+        success: function (payload) {
+            if (payload.redirect) {
+                window.location.href = payload.redirect;
+            }
+        }
+    });
+</script>
+{/block}
