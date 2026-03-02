@@ -3,15 +3,14 @@
 
 ## Projekt 1 
 
-Hodnocení: 6.6/7
-
+Hodnocení: 28/30
 
 ## Hodnocení půlsemestrální zkoušky/zkoušky
 
-Půlsemestrální zkouška: 13/20
+Půlsemestrální zkouška: 6/19
 
-Závěrečná zkouška: 41/60
+Závěrečná zkouška: 20/51
 
 ## Celkový počet bodů
 
-70/100 (C)
+54/100 (E)
