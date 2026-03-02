@@ -11,42 +11,53 @@ Repo slouží jako osobní archiv projektů, poznámek a ukázek řešení z jed
 ## 📚 Projekty podle semestrů
 
 ### 1. semestr
-- **IDM**: domácí úkol, tahák ke zkoušce
-- **IEL**: projekt „výpočty v obvodech“ (LaTeX), výpisky ke zkoušce
-- **ILG**: domácí úkol, důkaz rovnosti determinantu, numerické výpočty (Gauss-Seidel)
-- **IUS**: projekt č.1 – Kavárenský povaleč (ER diagram, Use case diagram), výpisky
-- **IZP**: projekty
+- **IDM**: jednotlivé body za semestr/zkoušku
+- **IEL**: projekt „výpočty v obvodech“ (LaTeX), jednotlivé body za semestr/zkoušku/
+- **ILG**: jednotlivé body za semestr/zkoušku
+- **IUS**: projekt – Autoopravna (týmový), domácí úkol, jednotlivé body za semestr/zkoušku
+- **IZP**: projekty, jednotlivé body za semestr/zkoušku
 
 ### 2. semestr
-- **AIT**:
-- **IMA1**: tahák ke zkoušce
-- **INC**: projekt – přístupový terminál VHDL, výpisy z přednášek
-- **IOS**: projekty (shell, synchronizace), studijní opora
-- **ISU**: zdroje k ISU mám v separátním repozitáři
-- **IZG**: OpenGL pipeline, renderer + Phongův model
+- **IMA1**: jednotlivé body za semestr/zkoušku
+- **INC**: projekt, jednotlivé body za semestr/zkoušku
+- **IOS**: projekty (shell, synchronizace), jednotlivé body za semestr/zkoušku
+- **ISU**: jednotlivé body za semestr/zkoušku
+- **IZG**: projekt, jednotlivé body za semestr/zkoušku
+- **IZLO**: projekty, jednotlivé body za semestr/zkoušku
 
 ### 3. semestr
-- **IAL**: úkoly (c201, c203, c206…), přehledy algoritmů
-- **IFJ**:
-- **IMA2**: domácí úkoly, tahák
-- **INP**: CPU interpret, Vigenérova šifra, BrainFuck
-- **IPT**: domácí úkoly, shrnutí ke státnicím
-- **ISS**: analýza řeči, poznámky
+- **IAL**: úkoly (c202, c204, c206…), projekt, jednotlivé body za semestr/zkoušku
+- **IFJ**: projekt (překladač), jednotlivé body za semestr/zkoušku
+- **IMA2**: jednotlivé body za semestr/zkoušku
+- **INP**: projekty, jednotlivé body za semestr/zkoušku
+- **IPT**: jednotlivé body za semestr/zkoušku
+- **ISS**: projekt, jednotlivé body za semestr/zkoušku
+- **ITU**: projekt, jednotlivé body za semestr/zkoušku
 
 ### 4. semestr
-- **IDS**: SQL projekt, prezentace, studijní opora
-- **IPK**: poznámky + projekt
-- **IPP**: projekt
-- **IZU**: most a pochodně, Prolog, k-means
-- **ICP**: projekt
+- **IDS**: jednotlivé body za semestr/zkoušku, projekt, hromadná konzultace
+- **IPK**: jednotlivé body za semestr/zkoušku, projekty
+- **IPP**: projekty, jednotlivé body za semestr/zkoušku
+- **IZU**: projekty, jednotlivé body za semestr/zkoušku
 
 ### 5. semestr
-- *(doplním později)*
+- **IIS**: jednotlivé body za semestr/zkoušku, projekt
+- **IMP**: jednotlivé body za semestr/zkoušku, projekt
+- **IMS**: projekt, jednotlivé body za semestr/zkoušku
+- **ISA**: projekt, jednotlivé body za semestr/zkoušku
+
+### Volitelné předměty
+- **BAN4**
+- **IAM**
+- **ICS**
+- **IMF**
+- **ISC**
+- **IVS**
+- **IZV**
 
 
 Každý předmět může obsahovat:
 - 📁 Projekty
-- 📝 Poznámky
 - ⚙️ Zdrojové kódy
 - 📄 Dokumentaci
 
