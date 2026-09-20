@@ -5,7 +5,7 @@
 
 Hodnocení: 80/100
 
-Projekt v jiném [repozitáři](https://www.fit.vut.cz/study/course/268222/.cs?year=2023)
+Projekt v jiném [repozitáři](https://dev.azure.com/ics-2024-xdolak09/_git/project)
 
 ## Celkový počet bodů
 
